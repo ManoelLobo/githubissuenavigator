@@ -6,6 +6,15 @@ injectGlobal`
   padding: 0;
   box-sizing: border-box;
   outline: 0;
+
+  &:focus {
+    outline: dotted 1px;
+  }
+}
+
+html {
+  font-family: Roboto;
+  font-size: 20px;
 }
 
 html, body, #root {
