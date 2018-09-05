@@ -27,4 +27,8 @@ body {
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
 }
+
+.sr {
+  display: none;
+}
 `;

@@ -16,7 +16,7 @@ export const AddRepoForm = styled.form`
   display: flex;
   flex-direction: row;
   width: 100%;
-  padding: 10px;
+  padding: 10px 0;
   border-bottom: 1px solid #eee;
 
   input {
@@ -44,5 +44,43 @@ export const AddRepoForm = styled.form`
     &:hover {
       background: #54992e;
     }
+  }
+`;
+
+export const Repository = styled.div`
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  img {
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+  }
+
+  div.details {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 45px;
+    padding: 2px 10px;
+
+    .repo-name {
+      font-size: 0.75rem;
+      font-weight: bold;
+      flex: 1;
+    }
+
+    .repo-owner {
+      font-size: 0.6rem;
+      color: #999;
+    }
+  }
+  button {
+    border: 0;
+    background: transparent;
+    color: #ccc;
+    font-size: 1rem;
   }
 `;
