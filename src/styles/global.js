@@ -21,6 +21,10 @@ html, body, #root {
   height: 100%;
 }
 
+#root{
+  display:flex;
+}
+
 body {
   background: #F5F5F5;
   font-family: sans-serif;

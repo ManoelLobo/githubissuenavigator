@@ -3,13 +3,19 @@ import styled from 'styled-components';
 export const Container = styled.div`
   background: #fff;
   display: flex;
-  flex: 1;
   width: 320px;
   min-width: 320px;
+  min-height: 300px;
   height: 100%;
   flex-direction: column;
   padding: 30px;
-  box-shadow: 10px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+
+  .instruction {
+    margin: 10px;
+    color: #999;
+  }
 `;
 
 export const AddRepoForm = styled.form`
@@ -24,10 +30,14 @@ export const AddRepoForm = styled.form`
     flex: 1;
     width: 100%;
     height: 42px;
-    border: 0;
+    border: 1px solid transparent;
     border-radius: 5px;
     font-size: 0.9rem;
     padding: 0 10px;
+
+    &.error {
+      border: 1px solid tomato;
+    }
   }
 
   button {
@@ -67,7 +77,6 @@ export const Repository = styled.div`
     padding: 2px 10px;
 
     .repo-name {
-      font-size: 0.75rem;
       font-weight: bold;
       flex: 1;
     }
