@@ -22,7 +22,14 @@ html, body, #root {
 }
 
 #root{
-  display:flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#main {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
 }
 
 body {
